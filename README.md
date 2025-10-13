@@ -1,6 +1,6 @@
 # WeatherApp
 
-WeatherApp, OpenWeatherMap API kullanarak hava durumu verilerini gösteren bir C# .NET 7.0 MVC uygulamasıdır. Bu proje PostgreSQL veritabanı ile çalışır ve hassas bilgiler (API key ve DB şifre) GitHub’da paylaşılmaz.
+WeatherApp, OpenWeatherMap API kullanarak hava durumu verilerini gösteren bir C# .NET 8.0 MVC uygulamasıdır. Bu proje PostgreSQL veritabanı ile çalışır ve hassas bilgiler (API key ve DB şifre) GitHub’da paylaşılmaz.
 
 ---
 
