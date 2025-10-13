@@ -1,0 +1,26 @@
+﻿@model WeatherApp.Business.DTOs.WeatherDTO
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="weather-container">
+    <h2 class="pulse">🌦 Hava Durumu 🌦</h2>
+    <form method="post" asp-action="Index">
+        <input type="text" name="city" id="city" value="@Model?.City" placeholder="Şehir girin..." />
+        <button type="submit">Ara</button>
+    </form>
+
+    @if (Model != null && !string.IsNullOrEmpty(Model.City))
+    {
+        <div class="weather-info">
+            <p><strong>Şehir:</strong> @Model.City</p>
+            <p><strong>Sıcaklık:</strong> @Model.Temperature °C</p>
+            <p><strong>Nem:</strong> @Model.Humidity %</p>
+            <p><strong>Rüzgar:</strong> @Model.WindSpeed m/s</p>
+            <p><strong>Durum:</strong> @Model.Condition</p>
+            <p><strong>Tarih:</strong> @Model.Date.ToString("dd.MM.yyyy HH:mm")</p>
+        </div>
+    }
+</div>
