@@ -1,17 +1,25 @@
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-WORKDIR /app
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+
+COPY ["WeatherApp.Presentation.sln", "./"]
+COPY ["WeatherApp.Business/WeatherApp.Business.csproj", "WeatherApp.Business/"]
+COPY ["WeatherApp.Data/WeatherApp.Data.csproj", "WeatherApp.Data/"]
+COPY ["WeatherApp.Models/WeatherApp.Models.csproj", "WeatherApp.Models/"]
+COPY ["WeatherApp.Presentation/WeatherApp.Presentation.csproj", "WeatherApp.Presentation/"]
+
+
+RUN dotnet restore "WeatherApp.Presentation.sln"
 
 
 COPY . .
-
-RUN dotnet restore "WeatherApp.Presentation/WeatherApp.Presentation.csproj"
 
 
 RUN dotnet publish "WeatherApp.Presentation/WeatherApp.Presentation.csproj" -c Release -o /app/publish --no-restore
 
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
 
@@ -23,4 +31,7 @@ EXPOSE 8080
 
 
 ENTRYPOINT ["dotnet", "WeatherApp.Presentation.dll"]
+```
+
+
 
