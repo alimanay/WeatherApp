@@ -1,69 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\",
+  "WorkspaceRootPath": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.presentation\\views\\weather\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.presentation\\views\\weather\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|solutionrelative:weatherapp.presentation\\views\\weather\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.presentation\\controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.presentation\\controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|solutionrelative:weatherapp.presentation\\controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9622291F-27D4-43ED-B12D-13CE9C75923D}|WeatherApp.Models\\WeatherApp.Models.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.models\\weatherdaily.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9622291F-27D4-43ED-B12D-13CE9C75923D}|WeatherApp.Models\\WeatherApp.Models.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.models\\weatherdaily.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9622291F-27D4-43ED-B12D-13CE9C75923D}|WeatherApp.Models\\WeatherApp.Models.csproj|solutionrelative:weatherapp.models\\weatherdaily.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9622291F-27D4-43ED-B12D-13CE9C75923D}|WeatherApp.Models\\WeatherApp.Models.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.models\\desarilizeapi\\forecastapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9622291F-27D4-43ED-B12D-13CE9C75923D}|WeatherApp.Models\\WeatherApp.Models.csproj|solutionrelative:weatherapp.models\\desarilizeapi\\forecastapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.data\\repositories\\weatherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.data\\repositories\\weatherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|solutionrelative:weatherapp.data\\repositories\\weatherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|solutionrelative:weatherapp.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|solutionrelative:weatherapp.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.data\\weatherapp.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.data\\weatherapp.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{789B0968-77A0-481B-A6A0-B5016B476FF0}|WeatherApp.Data\\WeatherApp.Data.csproj|solutionrelative:weatherapp.data\\weatherapp.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.business\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.business\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|solutionrelative:weatherapp.business\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|solutionrelative:weatherapp.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.business\\dtos\\weatherdailydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.business\\dtos\\weatherdailydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|solutionrelative:weatherapp.business\\dtos\\weatherdailydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.business\\dtos\\weatherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.business\\dtos\\weatherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|solutionrelative:weatherapp.business\\dtos\\weatherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|solutionrelative:weatherapp.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.business\\interfaces\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.business\\interfaces\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D68FFC3D-3A9F-4689-BBCE-3ADD7096C76E}|WeatherApp.Business\\WeatherApp.Business.csproj|solutionrelative:weatherapp.business\\interfaces\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9622291F-27D4-43ED-B12D-13CE9C75923D}|WeatherApp.Models\\WeatherApp.Models.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.models\\weatherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9622291F-27D4-43ED-B12D-13CE9C75923D}|WeatherApp.Models\\WeatherApp.Models.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.models\\weatherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9622291F-27D4-43ED-B12D-13CE9C75923D}|WeatherApp.Models\\WeatherApp.Models.csproj|solutionrelative:weatherapp.models\\weatherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.presentation\\weatherdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp.presentation\\weatherapp.presentation\\weatherdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|solutionrelative:weatherapp.presentation\\weatherdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -74,15 +70,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "WeatherController.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\Controllers\\WeatherController.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Presentation\\Controllers\\WeatherController.cs",
               "RelativeDocumentMoniker": "WeatherApp.Presentation\\Controllers\\WeatherController.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\Controllers\\WeatherController.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Presentation\\Controllers\\WeatherController.cs",
               "RelativeToolTip": "WeatherApp.Presentation\\Controllers\\WeatherController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -90,11 +86,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Data\\Context\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Data\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "WeatherApp.Data\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Data\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Data\\Context\\AppDbContext.cs",
               "RelativeToolTip": "WeatherApp.Data\\Context\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -102,11 +98,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "WeatherApp.Data.csproj",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Data\\WeatherApp.Data.csproj",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Data\\WeatherApp.Data.csproj",
               "RelativeDocumentMoniker": "WeatherApp.Data\\WeatherApp.Data.csproj",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Data\\WeatherApp.Data.csproj",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Data\\WeatherApp.Data.csproj",
               "RelativeToolTip": "WeatherApp.Data\\WeatherApp.Data.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -114,11 +110,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\Services\\UserService.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "WeatherApp.Business\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\Services\\UserService.cs",
               "RelativeToolTip": "WeatherApp.Business\\Services\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,11 +122,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "WeatherDTO.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\DTOs\\WeatherDTO.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\DTOs\\WeatherDTO.cs",
               "RelativeDocumentMoniker": "WeatherApp.Business\\DTOs\\WeatherDTO.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\DTOs\\WeatherDTO.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\DTOs\\WeatherDTO.cs",
               "RelativeToolTip": "WeatherApp.Business\\DTOs\\WeatherDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -138,11 +134,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\Class1.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\Class1.cs",
               "RelativeDocumentMoniker": "WeatherApp.Business\\Class1.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\Class1.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\Class1.cs",
               "RelativeToolTip": "WeatherApp.Business\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -150,11 +146,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "IWeatherService.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\Interfaces\\IWeatherService.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\Interfaces\\IWeatherService.cs",
               "RelativeDocumentMoniker": "WeatherApp.Business\\Interfaces\\IWeatherService.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\Interfaces\\IWeatherService.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\Interfaces\\IWeatherService.cs",
               "RelativeToolTip": "WeatherApp.Business\\Interfaces\\IWeatherService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -162,23 +158,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ForecastApiResponse.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Models\\DesarilizeApi\\ForecastApiResponse.cs",
-              "RelativeDocumentMoniker": "WeatherApp.Models\\DesarilizeApi\\ForecastApiResponse.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Models\\DesarilizeApi\\ForecastApiResponse.cs",
-              "RelativeToolTip": "WeatherApp.Models\\DesarilizeApi\\ForecastApiResponse.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T19:56:05.573Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "WeatherDaily.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Models\\WeatherDaily.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Models\\WeatherDaily.cs",
               "RelativeDocumentMoniker": "WeatherApp.Models\\WeatherDaily.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Models\\WeatherDaily.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Models\\WeatherDaily.cs",
               "RelativeToolTip": "WeatherApp.Models\\WeatherDaily.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -186,11 +170,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "WeatherData.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Models\\WeatherData.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Models\\WeatherData.cs",
               "RelativeDocumentMoniker": "WeatherApp.Models\\WeatherData.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Models\\WeatherData.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Models\\WeatherData.cs",
               "RelativeToolTip": "WeatherApp.Models\\WeatherData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -198,11 +182,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Data\\Repositories\\UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Data\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "WeatherApp.Data\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Data\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Data\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "WeatherApp.Data\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -210,11 +194,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "WeatherDashboardViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\WeatherDashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Presentation\\WeatherDashboardViewModel.cs",
               "RelativeDocumentMoniker": "WeatherApp.Presentation\\WeatherDashboardViewModel.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\WeatherDashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Presentation\\WeatherDashboardViewModel.cs",
               "RelativeToolTip": "WeatherApp.Presentation\\WeatherDashboardViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -224,22 +208,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
               "RelativeDocumentMoniker": "WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
               "RelativeToolTip": "WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-18T19:55:23.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "WeatherRepository.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Data\\Repositories\\WeatherRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Data\\Repositories\\WeatherRepository.cs",
               "RelativeDocumentMoniker": "WeatherApp.Data\\Repositories\\WeatherRepository.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Data\\Repositories\\WeatherRepository.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Data\\Repositories\\WeatherRepository.cs",
               "RelativeToolTip": "WeatherApp.Data\\Repositories\\WeatherRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -247,11 +231,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "WeatherDailyDTO.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\DTOs\\WeatherDailyDTO.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\DTOs\\WeatherDailyDTO.cs",
               "RelativeDocumentMoniker": "WeatherApp.Business\\DTOs\\WeatherDailyDTO.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\DTOs\\WeatherDailyDTO.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\DTOs\\WeatherDailyDTO.cs",
               "RelativeToolTip": "WeatherApp.Business\\DTOs\\WeatherDailyDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -259,11 +243,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "WeatherService.cs",
-              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\Services\\WeatherService.cs",
+              "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\Services\\WeatherService.cs",
               "RelativeDocumentMoniker": "WeatherApp.Business\\Services\\WeatherService.cs",
-              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Business\\Services\\WeatherService.cs",
+              "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp.Presentation\\WeatherApp.Business\\Services\\WeatherService.cs",
               "RelativeToolTip": "WeatherApp.Business\\Services\\WeatherService.cs",
               "ViewState": "AgIAAJEAAAAAAAAAAAAcwKMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
