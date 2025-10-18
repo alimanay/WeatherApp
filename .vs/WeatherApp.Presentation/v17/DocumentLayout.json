@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|solutionrelative:weatherapp.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.presentation\\views\\weather\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|solutionrelative:weatherapp.presentation\\views\\weather\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|c:\\users\\alima\\desktop\\githubprojeler\\weatherapp\\weatherapp.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECACF70D-3ED4-42F9-B6DD-FBF3A24A1111}|WeatherApp.Presentation\\WeatherApp.Presentation.csproj|solutionrelative:weatherapp.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC80F682-3D55-C8F8-4895-A4A9EDD49434}|\u00C7\u00F6z\u00FCm \u00D6\u011Feleri{AC80F682-3D55-C8F8-4895-A4A9EDD49434}|C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
@@ -109,13 +109,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\Program.cs",
               "RelativeDocumentMoniker": "WeatherApp.Presentation\\Program.cs",
               "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\Program.cs",
               "RelativeToolTip": "WeatherApp.Presentation\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCUAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwAcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-18T20:14:46.346Z",
               "EditorCaption": ""
@@ -254,13 +254,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
               "RelativeDocumentMoniker": "WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
               "ToolTip": "C:\\Users\\alima\\Desktop\\GitHubProjeler\\WeatherApp\\WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
               "RelativeToolTip": "WeatherApp.Presentation\\Views\\Weather\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAYwM4AAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-18T19:55:23.998Z",
               "EditorCaption": ""
