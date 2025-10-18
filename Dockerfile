@@ -31,7 +31,5 @@ EXPOSE 8080
 
 
 ENTRYPOINT ["dotnet", "WeatherApp.Presentation.dll"]
-```
-
 
 
