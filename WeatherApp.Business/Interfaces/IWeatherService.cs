@@ -13,5 +13,7 @@ namespace WeatherApp.Business.Interfaces
         Task<WeatherDTO> GetCurrentWeatherAsync(string city);
         Task<List<WeatherDTO>> GetHourlyWeatherAsync(string city);
         Task<List<WeatherDTO>> GetForecastAsync(string city, int days);
+        Task<List<WeatherDailyDTO>> GetDailyWeatherAsync (string city, int days);
+
     }
 }

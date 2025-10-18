@@ -9,5 +9,6 @@ namespace WeatherApp.Data.Context
 
         public DbSet<User> Users { get; set; }
         public DbSet<WeatherData> WeatherDatas { get; set; }
+        public DbSet<WeatherDaily> WeatherDailies { get; set; }
     }
 }

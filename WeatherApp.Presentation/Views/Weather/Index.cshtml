@@ -1,26 +1,220 @@
-﻿@model WeatherApp.Business.DTOs.WeatherDTO
+﻿@* ADIM 1: Model tanımı aynı kalır *@
+@model WeatherApp.Presentation.WeatherDashboardViewModel
+
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+  
+    .weather-container {
+        max-width: 800px; 
+        margin: 20px auto;
+        padding: 35px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(14px);
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
 
+        .weather-container:hover {
+            box-shadow: 0 0 40px rgba(100, 200, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+    .pulse {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 25px;
+        background: linear-gradient(to right, #70e1f5, #ffd194);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    input[type="text"] {
+        width: 70%;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.85);
+        color: #222;
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+        input[type="text"]:focus {
+            box-shadow: 0 0 10px rgba(100, 200, 255, 0.5);
+            transform: scale(1.03);
+        }
+
+    button {
+        padding: 10px 25px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #007bff, #00bfff);
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        button:hover {
+            background: linear-gradient(135deg, #00bfff, #70e1f5);
+            transform: scale(1.05);
+            box-shadow: 0 0 12px rgba(100, 200, 255, 0.5);
+        }
+
+    .weather-info {
+        margin-top: 30px;
+        text-align: left;
+        padding: 25px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        font-size: 1.05rem;
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+        .weather-info p {
+            margin: 8px 0;
+        }
+
+        .weather-info strong {
+            color: darkslategrey;
+            font-weight: 500;
+        }
+
+  
+    .forecast-container {
+        display: flex; 
+        justify-content: space-between; 
+        gap: 15px; 
+        margin-top: 30px;
+        flex-wrap: wrap; 
+    }
+
+  
+    .forecast-card {
+        flex: 1; 
+        min-width: 120px; 
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border-radius: 15px;
+        text-align: center;
+        animation: fadeIn 0.8s ease-in-out;
+        transition: all 0.3s ease;
+    }
+
+    .forecast-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .forecast-card h5 {
+        margin: 0 0 10px 0;
+        font-weight: 600;
+        color: #ffd194;
+    }
+    
+    .forecast-card img { 
+        width: 50px;
+        height: 50px;
+    }
+    
+    .forecast-card .temps { 
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .temps .max {
+        font-weight: bold;
+    }
+
+    .temps .min {
+        opacity: 0.7;
+    }
+
+    /* 📱 Mobil uyumluluk için */
+    @@media (max-width: 768px) {
+        .forecast-container {
+            flex-direction: column; /* Mobil ekranda kartları alt alta dizer */
+        }
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
 
 <div class="weather-container">
     <h2 class="pulse">🌦 Hava Durumu 🌦</h2>
+
     <form method="post" asp-action="Index">
-        <input type="text" name="city" id="city" value="@Model?.City" placeholder="Şehir girin..." />
+        <input type="text" name="city" id="city" value="@Model?.CurrentWeather?.City" placeholder="Şehir girin..." />
         <button type="submit">Ara</button>
     </form>
 
-    @if (Model != null && !string.IsNullOrEmpty(Model.City))
+    @if (ViewBag.ErrorMessage != null)
     {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
+
+    @* Anlık hava durumu verisi varsa bu bölümü göster *@
+    @if (Model?.CurrentWeather != null && !string.IsNullOrEmpty(Model.CurrentWeather.City))
+    {
+        <h3 style="color:#70e1f5; margin-top:20px;">Anlık Durum</h3>
         <div class="weather-info">
-            <p><strong>Şehir:</strong> @Model.City</p>
-            <p><strong>Sıcaklık:</strong> @Model.Temperature °C</p>
-            <p><strong>Nem:</strong> @Model.Humidity %</p>
-            <p><strong>Rüzgar:</strong> @Model.WindSpeed m/s</p>
-            <p><strong>Durum:</strong> @Model.Condition</p>
-            <p><strong>Tarih:</strong> @Model.Date.ToString("dd.MM.yyyy HH:mm")</p>
+            <p><strong>Şehir:</strong> @Model.CurrentWeather.City</p>
+            <p><strong>Sıcaklık:</strong> @((int)Model.CurrentWeather.Temperature) °C</p>
+            <p><strong>Nem:</strong> @Model.CurrentWeather.Humidity %</p>
+            <p><strong>Rüzgar:</strong> @Model.CurrentWeather.WindSpeed m/s</p>
+            <p><strong>Durum:</strong> @Model.CurrentWeather.Condition</p>
+            <p><strong>Tarih:</strong> @Model.CurrentWeather.Date.ToString("dd.MM.yyyy HH:mm")</p>
         </div>
     }
+
+    @* 🌟🌟 GÜNCELLENMİŞ HTML BÖLÜMÜ 🌟🌟 *@
+    @* 5 günlük tahmin verisi varsa bu bölümü göster *@
+    @if (Model?.DailyForecast != null && Model.DailyForecast.Any())
+    {
+        <h3 style="color:#70e1f5; margin-top:30px;">5 Günlük Tahmin</h3>
+        
+        <div class="forecast-container">
+            @foreach (var day in Model.DailyForecast)
+            {
+                <div class="forecast-card">
+                    @* System.Globalization.CultureInfo kullanarak gün adını Türkçe alıyoruz *@
+                    <h5>@day.Date.ToString("dddd", new System.Globalization.CultureInfo("tr-TR"))</h5>
+                    <img src="http://openweathermap.org/img/wn/@(day.Icon).png" alt="@day.Condition">
+                    <div class="temps">
+                        <span class="max">@((int)day.MaxTemp)°</span> / 
+                        <span class="min">@((int)day.MinTemp)°</span>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
 </div>
+

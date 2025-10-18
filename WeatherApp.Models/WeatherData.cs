@@ -15,5 +15,8 @@ namespace WeatherApp.Models
         public double Humidity { get; set; }
         public double WindSpeed { get; set; }
         public DateTime Date { get; set; }
+
+        public List<WeatherDaily> DailyForecasts { get; set; }
     }
+
 }

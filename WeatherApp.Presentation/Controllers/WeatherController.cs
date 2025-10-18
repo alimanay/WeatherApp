@@ -1,12 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using WeatherApp.Business.DTOs;
 using WeatherApp.Business.Interfaces;
+using WeatherApp.Presentation;
+using WeatherApp.Presentation.Models; // <-- BU SATIRI EKLEYİN
 
 namespace WeatherApp.Controllers
 {
@@ -21,25 +18,50 @@ namespace WeatherApp.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View(new WeatherDTO());
+            // View'a artık boş WeatherDTO değil, boş ViewModel gönderiyoruz
+            return View(new WeatherDashboardViewModel());
         }
+
         public async Task<IActionResult> Index(string city)
         {
-         
+            // 1. Ana ViewModel'i oluştur
+            var viewModel = new WeatherDashboardViewModel();
 
-            WeatherDTO weather = await _weatherService.GetCurrentWeatherAsync(city);
-
-            // weather null olabilir mi? Kontrol et
-            if (weather == null)
+            try
             {
-                return View("Error"); // Veya boş bir model döndür
+                if (string.IsNullOrWhiteSpace(city))
+                {
+                    ViewBag.ErrorMessage = "Lütfen bir şehir adı giriniz.";
+                    return View(viewModel); // Boş ViewModel'i döndür
+                }
+
+                // 2. Anlık veriyi çek ve ViewModel'e ata
+                viewModel.CurrentWeather = await _weatherService.GetCurrentWeatherAsync(city);
+
+                // 3. (YENİ) 7 günlük veriyi çek ve ViewModel'e ata
+                viewModel.DailyForecast = await _weatherService.GetDailyWeatherAsync(city, 5); // 7 gün istiyoruz
+
+                // İki çağrı da başarısız olursa hata ver
+                if (viewModel.CurrentWeather == null && (viewModel.DailyForecast == null || !viewModel.DailyForecast.Any()))
+                {
+                    ViewBag.ErrorMessage = "Hava durumu bilgisi bulunamadı.";
+                    return View(viewModel);
+                }
+
+                // 4. Dolu ViewModel'i View'a gönder
+                return View(viewModel);
             }
+            catch (Exception ex)
+            {
+                // Gerçek hata mesajını ViewBag'e yazdırıyoruz.
+                // Bu bize sorunun kaynağını gösterecektir (örn: "Response status code does not indicate success: 401 (Unauthorized).")
+                ViewBag.ErrorMessage = $"Bir hata oluştu: {ex.Message}";
 
-            return View(weather);
+                // Hatanın detaylarını görmek için Debug konsoluna da yazdırabilirsiniz.
+                System.Diagnostics.Debug.WriteLine(ex.ToString());
 
+                return View(viewModel);
+            }
         }
-
-
     }
 }
-
