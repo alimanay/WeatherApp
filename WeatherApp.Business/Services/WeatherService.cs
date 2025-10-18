@@ -102,13 +102,19 @@ namespace WeatherApp.Business.Services
         {
             try
             {
-                var fullUrl = $"{_baseUrl}forecast?q={city}&appid={_apiKey}&units=metric";
+                var fullUrl = $"{_baseUrl.TrimEnd('/')}/forecast?q={city}&appid={_apiKey}&units=metric";
+
+                Console.WriteLine($"[CONSOLE DEBUG] 5 Günlük API'ye istek atılıyor: {fullUrl}");
+
                 var apiResponse = await _httpClient.GetFromJsonAsync<ForecastApiResponse>(fullUrl);
 
                 if (apiResponse == null || apiResponse.List == null || !apiResponse.List.Any())
                 {
+                    Console.WriteLine($"[CONSOLE DEBUG] API'den {city} için tahmin verisi gelmedi.");
                     return new List<WeatherDailyDTO>();
                 }
+
+                Console.WriteLine($"[CONSOLE DEBUG] API'den {apiResponse.List.Count} adet 3 saatlik tahmin alındı.");
 
                 var dailyForecasts = apiResponse.List
                     .GroupBy(item => DateTime.Parse(item.DtTxt).Date)
@@ -124,17 +130,18 @@ namespace WeatherApp.Business.Services
                     .Take(days)
                     .ToList();
 
-               
+                Console.WriteLine($"[CONSOLE DEBUG] {dailyForecasts.Count} adet günlük tahmin oluşturuldu.");
+
                 var parentWeatherData = await _weatherRepository.GetWeatherDataByCityAsync(city);
                 if (parentWeatherData == null)
                 {
-                    Console.WriteLine($"KRİTİK HATA: {city} için ana WeatherData kaydı bulunamadı. Günlük tahminler kaydedilemedi.");
-                    return dailyForecasts; // Veriyi yine de göster ama kaydetme.
+                    Console.WriteLine($"!!!! KRİTİK HATA: {city} için ana WeatherData kaydı bulunamadı. Günlük tahminler kaydedilemedi.");
+                    return dailyForecasts;
                 }
 
-                // ===== 2. ADIM: Her bir günlük tahmini, ana kaydın ID'si ile kaydet =====
                 foreach (var dailyDto in dailyForecasts)
                 {
+                    // Burada, doğru `WeatherApp.Models.WeatherDaily` sınıfını kullandığımızdan eminiz.
                     var entity = new WeatherDaily
                     {
                         City = dailyDto.City,
@@ -143,7 +150,6 @@ namespace WeatherApp.Business.Services
                         MaxTemp = dailyDto.MaxTemp,
                         Condition = dailyDto.Condition,
                         Icon = dailyDto.Icon,
-                        // Yabancı anahtarı (Foreign Key) burada atıyoruz.
                         WeatherDataId = parentWeatherData.Id
                     };
                     await _weatherRepository.AddOrUpdateWeatherDailyAsync(entity);
