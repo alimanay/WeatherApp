@@ -1,14 +1,17 @@
-﻿@* ADIM 1: Model tanımı aynı kalır *@
+﻿@* ADIM 1: Model *@
 @model WeatherApp.Presentation.WeatherDashboardViewModel
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<!-- 🔹 Font Awesome (ikonlar için) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-  
+    /* 🌈 GENEL TASARIM */
     .weather-container {
-        max-width: 800px; 
+        max-width: 800px;
         margin: 20px auto;
         padding: 35px;
         text-align: center;
@@ -34,6 +37,7 @@
         -webkit-text-fill-color: transparent;
     }
 
+    /* 🔹 Arama Kutusu */
     form {
         display: flex;
         justify-content: center;
@@ -76,40 +80,66 @@
             box-shadow: 0 0 12px rgba(100, 200, 255, 0.5);
         }
 
-    .weather-info {
-        margin-top: 30px;
-        text-align: left;
+    /* 🌤️ ANLIK DURUM - MODERN KART TASARIM */
+    .weather-info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 20px;
+        margin-top: 25px;
         padding: 25px;
-        border-radius: 15px;
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(8px);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-        font-size: 1.05rem;
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
         animation: fadeIn 0.8s ease-in-out;
     }
 
-        .weather-info p {
-            margin: 8px 0;
-        }
-
-        .weather-info strong {
-            color: darkslategrey;
-            font-weight: 500;
-        }
-
-  
-    .forecast-container {
-        display: flex; 
-        justify-content: space-between; 
-        gap: 15px; 
-        margin-top: 30px;
-        flex-wrap: wrap; 
+    .info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        transition: all 0.3s ease;
     }
 
-  
+        .info-item:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 12px rgba(100, 200, 255, 0.4);
+        }
+
+        .info-item i {
+            font-size: 1.8rem;
+            color: lavender; /* Daha pastel mavi */
+            margin-bottom: 8px;
+        }
+
+        .info-item span {
+            font-weight: 600;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        .info-item small {
+            color: #ccc;
+            font-size: 0.8rem;
+            margin-top: 3px;
+        }
+
+    /* 🌦️ 5 GÜNLÜK TAHMİN */
+    .forecast-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
     .forecast-card {
-        flex: 1; 
-        min-width: 120px; 
+        flex: 1;
+        min-width: 120px;
         padding: 15px;
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(8px);
@@ -119,27 +149,27 @@
         transition: all 0.3s ease;
     }
 
-    .forecast-card:hover {
-        transform: translateY(-5px);
-        background: rgba(255, 255, 255, 0.2);
-    }
-    
-    .forecast-card h5 {
-        margin: 0 0 10px 0;
-        font-weight: 600;
-        color: #ffd194;
-    }
-    
-    .forecast-card img { 
-        width: 50px;
-        height: 50px;
-    }
-    
-    .forecast-card .temps { 
-        margin-top: 10px;
-        font-size: 0.9rem;
-    }
-    
+        .forecast-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .forecast-card h5 {
+            margin: 0 0 10px 0;
+            font-weight: 600;
+            color: #ffd194;
+        }
+
+        .forecast-card img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .forecast-card .temps {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
     .temps .max {
         font-weight: bold;
     }
@@ -148,10 +178,10 @@
         opacity: 0.7;
     }
 
-    /* 📱 Mobil uyumluluk için */
+    /* 📱 Mobil uyumluluk */
     @@media (max-width: 768px) {
         .forecast-container {
-            flex-direction: column; /* Mobil ekranda kartları alt alta dizer */
+            flex-direction: column;
         }
     }
 
@@ -160,6 +190,7 @@
             opacity: 0;
             transform: translateY(10px);
         }
+
         to {
             opacity: 1;
             transform: translateY(0);
@@ -180,41 +211,62 @@
         <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
     }
 
-    @* Anlık hava durumu verisi varsa bu bölümü göster *@
+    @* 🌤️ ANLIK DURUM *@
     @if (Model?.CurrentWeather != null && !string.IsNullOrEmpty(Model.CurrentWeather.City))
     {
         <h3 style="color:#70e1f5; margin-top:20px;">Anlık Durum</h3>
-        <div class="weather-info">
-            <p><strong>Şehir:</strong> @Model.CurrentWeather.City</p>
-            <p><strong>Sıcaklık:</strong> @((int)Model.CurrentWeather.Temperature) °C</p>
-            <p><strong>Nem:</strong> @Model.CurrentWeather.Humidity %</p>
-            <p><strong>Rüzgar:</strong> @Model.CurrentWeather.WindSpeed m/s</p>
-            <p><strong>Durum:</strong> @Model.CurrentWeather.Condition</p>
-            <p><strong>Tarih:</strong> @Model.CurrentWeather.Date.ToString("dd.MM.yyyy HH:mm")</p>
+
+        <div class="weather-info-grid">
+            <div class="info-item">
+                <i class="fas fa-city"></i>
+                <span>@Model.CurrentWeather.City</span>
+                <small>Şehir</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-temperature-high"></i>
+                <span>@((int)Model.CurrentWeather.Temperature)°C</span>
+                <small>Sıcaklık</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-tint"></i>
+                <span>@Model.CurrentWeather.Humidity %</span>
+                <small>Nem</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-wind"></i>
+                <span>@Model.CurrentWeather.WindSpeed m/s</span>
+                <small>Rüzgar</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-cloud"></i>
+                <span>@Model.CurrentWeather.Condition</span>
+                <small>Durum</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-calendar-day"></i>
+                <span>@Model.CurrentWeather.Date.ToString("dd.MM.yyyy HH:mm")</span>
+                <small>Tarih</small>
+            </div>
         </div>
     }
 
-    @* 🌟🌟 GÜNCELLENMİŞ HTML BÖLÜMÜ 🌟🌟 *@
-    @* 5 günlük tahmin verisi varsa bu bölümü göster *@
+    @* ☀️ 5 GÜNLÜK TAHMİN *@
     @if (Model?.DailyForecast != null && Model.DailyForecast.Any())
     {
         <h3 style="color:#70e1f5; margin-top:30px;">5 Günlük Tahmin</h3>
-        
+
         <div class="forecast-container">
             @foreach (var day in Model.DailyForecast)
             {
                 <div class="forecast-card">
-                    @* System.Globalization.CultureInfo kullanarak gün adını Türkçe alıyoruz *@
                     <h5>@day.Date.ToString("dddd", new System.Globalization.CultureInfo("tr-TR"))</h5>
                     <img src="http://openweathermap.org/img/wn/@(day.Icon).png" alt="@day.Condition">
                     <div class="temps">
-                        <span class="max">@((int)day.MaxTemp)°</span> / 
+                        <span class="max">@((int)day.MaxTemp)°</span> /
                         <span class="min">@((int)day.MinTemp)°</span>
                     </div>
                 </div>
             }
         </div>
     }
-
 </div>
-
